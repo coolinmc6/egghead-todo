@@ -9,3 +9,29 @@ For my other React apps, please see [React-App](https://github.com/coolinmc6/rea
 how it works.  Take some good notes and describe what each of these tests is looking for.
 - I should also try re-writing some of the functions just so that I understand how they work.
 - Get notes on the JS methods that he uses
+
+## Lecture 14: Create a Pipe Function to Enable Function Composition
+
+## Lecture 15: Remove Items from a List without Mutations
+- finished
+
+## Lecture 16: Build a Link Component to Navigate to Routes in React
+- start here
+
+## Lecture :
+
+## Lecture :
+
+## Lecture :
+
+## Lecture :
+
+## Lecture :
+
+## Lecture :
+
+## Lecture :
+
+## Lecture :
+
+## Lecture :

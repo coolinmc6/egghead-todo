@@ -1,4 +1,4 @@
-import {addTodo} from './todoHelpers'
+import {addTodo, findByID, toggleTodo, updateTodo, removeTodo} from './todoHelpers'
 
 test('addTodo should add the passed todo to the list', () => {
 	const startTodos = [
