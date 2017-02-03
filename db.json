@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "name": "Learn JSX",
+      "isComplete": true
+    },
+    {
+      "id": 2,
+      "name": "Learn JSX note 2",
+      "isComplete": false
+    },
+    {
+      "id": 64985,
+      "name": "new todo",
+      "isComplete": true
+    },
+    {
+      "id": 999255,
+      "name": "another todo",
+      "isComplete": false
+    }
+  ]
+}
