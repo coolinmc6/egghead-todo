@@ -10,6 +10,20 @@ how it works.  Take some good notes and describe what each of these tests is loo
 - I should also try re-writing some of the functions just so that I understand how they work.
 - Get notes on the JS methods that he uses
 
+## Notes
+- this is pretty sweet:
+```sh
+npm i -g json-server
+```
+
+  - Make a `db.json` file in your repo's directory
+
+```sh
+json-server -p 8080 --watch db.json
+```
+
+
+
 ## Lecture 14: Create a Pipe Function to Enable Function Composition
 
 ## Lecture 15: Remove Items from a List without Mutations
