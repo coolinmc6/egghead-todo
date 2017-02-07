@@ -49,3 +49,50 @@ json-server -p 8080 --watch db.json
 ## Lecture :
 
 ## Lecture :
+
+## Particular Items
+
+### Deleting a ToDo
+```javascript
+// App.js
+handleRemove = (id, evt) => {
+  evt.preventDefault();
+  const updatedTodos = removeTodo(this.state.todos, id)
+  this.setState({todos: updatedTodos})
+  destroyTodo(id)
+    .then(() => this.showTempMessage('Todo Removed'))
+}
+
+// in the render() function
+<TodoList handleToggle={this.handleToggle} 
+          todos={displayTodos}
+          handleRemove={this.handleRemove}/>
+
+// TodoList.js
+<ul>
+  { props.todos.map(todo => <TodoItem handleToggle={props.handleToggle} key={todo.id} {...todo} handleRemove={props.handleRemove}/> )}
+</ul>
+
+// TodoItem.js
+export const TodoItem = (props) => {
+	const handleToggle = partial(props.handleToggle, props.id)
+	const handleRemove = partial(props.handleRemove, props.id)
+	return (
+		<li>
+		  {/* returns an error => <input type="checkbox" checked={todo.isComplete}/>{todo.name}*/}
+		  <span className="delete-item"><a href="#" onClick={handleRemove}>X</a></span>
+		  <input type="checkbox" onChange={handleToggle} 
+		  defaultChecked={props.isComplete}/>{props.name}
+
+		</li>
+	)
+}
+
+// src/lib/utils.js
+export const partial = (fn, ...args) => fn.bind(null, ...args)
+```
+
+the handleRemove function takes an id and an event (which I don't know how to do)
+
+
+
